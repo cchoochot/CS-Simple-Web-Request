@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CSRestForm
@@ -38,6 +34,7 @@ namespace CSRestForm
                 });
             }
 
+            #region old
             //Task.Factory
             //    .FromAsync(request.BeginGetResponse, request.EndGetResponse, null)
             //    .ContinueWith(task =>
@@ -53,6 +50,7 @@ namespace CSRestForm
             //        //var response = (HttpWebResponse)task.Result;
             //        //Debug.Assert(response.StatusCode == HttpStatusCode.OK);
             //    });
+            #endregion old
         }
     }
 
